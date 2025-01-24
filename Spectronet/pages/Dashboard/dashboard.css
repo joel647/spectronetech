@@ -1,0 +1,269 @@
+*{
+    border: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(/images/wendemobg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100hv;
+    margin: 0;
+    opacity: 200px;
+    backdrop-filter: blur(10px);
+
+}
+
+
+.box{
+    background: linear-gradient(200deg,#271c20b7, #3c8bbc2f );
+    width: 92%;
+    height: 100%;  
+    margin: 45px 0px 0px 40px;
+    /* margin: auto; */
+    padding: 20px 45px 60px;
+    border: 7px solid #2a2226dd;
+    border-top-left-radius:70px;
+    border-left: 12px;
+
+}
+
+.box:hover{
+    background: linear-gradient(160deg,#271c20e7, #86b0cb56 );
+}
+
+
+
+
+#welcomeMessage {
+    margin-bottom: 20px;
+    color: #b0aeaeb1;
+    font-size: 14px;
+    text-align: center;
+}
+
+#btn{
+    width:30%;
+    padding: 3.2px 40px 3.2px;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px 0px 0px 260px ;
+    /* border: 2px solid #ffffffcb;    */
+    box-shadow: 0.5px 2px  0.5px#ffffffcb;
+}
+
+#span{
+    border: 1px solid red;
+    display: flex;
+    height: 65px;
+    margin: 0px 0px 40px;
+}
+
+.spanDivOne, .spanDivTwo{
+    border: 1px solid green;
+    width: 100%;
+}
+
+#showBalance {
+    color:#fff;
+    align-items: center;
+    width:60%;
+    text-align: center;
+    border: 1px solid wheat;
+    margin: 10px 20% 0px;
+}
+
+#showBal{
+    color:#fff;
+    align-items: center;
+    width:60%;
+    text-align: center;
+    border: 1px solid wheat;
+    margin: 10px 20% 0px;
+}
+
+/* Responsive Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 10px 0px 0px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: linear-gradient(120deg,#271c201b, #141619 );
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.service {
+    background-color: #514b4e9d;
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0px 0px 0px;
+}
+
+.service:hover{
+    background-color:  #191416;
+     transform: rotate(10deg);
+     transition: 12sec ease-in-out;
+     border-radius:13px ;
+     color:  #857b7fe7;
+}
+
+.service h2   {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service a{
+    text-decoration: none;
+    text-align: center;
+    color: #ffffffa0;
+}
+
+
+
+button {
+    background-color: #191416;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #463f41a8;
+}
+
+/* i{
+    font-size: 27px;
+} */
+
+p {
+    margin-top: 10px;   
+    font-size: 14px;
+    color: #666;
+}
+
+@media(min-width:400px) {
+    .service:hover{
+    transform: rotate(4deg);
+    transition: 12sec ease-in-out;
+    } 
+
+    .service{
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .grid{
+        max-height: 400px;
+    }
+
+
+    #btn{
+        margin-left:100px ;
+        width: 140px;
+    }
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 710px) {
+ .grid{
+        grid-template-columns: repeat(2, 3fr);
+        width: fit-content;
+        margin-left: 40px;
+   
+      }
+
+      .container{
+        width: fit-content;
+  
+      } 
+      .service{
+      width: 200px;
+      }
+    .service:hover{
+     transform: rotate(7deg);
+     transition: 12sec ease-in-out;
+
+    }
+    
+    #OtherServce{
+        margin-left: 50%;
+        display: block;
+        border: 1px solid  green;
+     }
+    
+}
+
+@media (min-width:800px) {
+    .grid{
+        grid-template-columns: repeat(3, 3fr);
+        width: fit-content;
+        margin:0px 300px 0px 0px ;
+      }
+
+      .service{
+        width: 170px;
+      }
+
+    
+}
+
+@media (min-width: 960px) {
+
+    .grid{
+        grid-template-columns: repeat(3, 3fr);
+        width: fit-content;
+        padding-bottom  : 60%;
+        margin-left:70px ;
+        }
+
+        .service{
+            width: 210px;
+            height: 130px;
+            padding: 5px;
+          }  
+
+        .service:hover{
+            transform: rotate(3.2deg);
+        }
+
+        #OtherServce{
+           aspect-ratio: 12/4;
+           margin-left: 50%;
+           border: 1px solid  green;
+        }
+
+    @media (min-width: 1200px) {
+        .grid{
+            grid-template-columns: repeat(4, 2fr);
+            width: fit-content;
+            /* border: 1px solid red; */
+            padding: 15px;
+            margin: auto;
+        }
+
+        .service{
+            width: 250px;
+            height: 130px;
+            padding: 7px;
+          }  
+
+          #OtherServce{
+            aspect-ratio: 12/4;
+            margin-left: 0%;
+         }
+}
+
+}
